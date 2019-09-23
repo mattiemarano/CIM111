@@ -1,3 +1,63 @@
-h1 {
-background-color : pink;
+
+html,body{
+  background-color: LavenderBlush;
+  color: black;
+  font-family: 'Fira Sans', sans-serif;
 }
+
+h1 {
+  font-size: 24pt;
+/*background-color : pink;*/
+}
+
+h3 {
+  font-size: 16pt;
+}
+
+p {
+font-size: 12pt;
+
+}
+
+a:hover{
+background-color: HotPink;
+color: white;
+}
+
+#email {
+  text-decoration: none;
+  color: LightSlateGray;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:visited{
+  text-decoration: none;
+  color: LightSlateGray;
+}
+
+img {
+  float:right;
+  padding-left: 10px;
+  padding-right: 10px; 
+}
+
+#cover {
+  float: right;
+}
+
+section{
+  padding-top:10px;
+  padding-right:30px;
+  padding-bottom:10px;
+  padding-left: 30px;
+}
+
+#address {
+float: right
+}
+
+  font-family: 'Raleway', sans-serif;
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">

@@ -1,0 +1,36 @@
+html,body {
+  /* dont use black backgrounds */
+  background-color: black;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+section#centered, #centered /*mean the same thing*/ {
+  width: 600px; /* set the width of the section to be 600 px */
+
+  /*these two margin tags mean the same thing*/
+  margin: 0 auto; /* centering */ /* set margin to be 0 on top and bottom; and auto on the left and right */
+  /*margin: 0 auto 0 auto; /* top right bottom left */
+
+  border: 5px solid pink; /* general border around the page; set the border to be 1px of solid blue */
+}
+
+
+h1 {
+  font-size: 40px;
+  font-weight: 900; /* use the tag to modify the weight of the text - can change
+   the actual amount of boldness (in conjuction with the bold tag in html) */
+
+/* display: inline-block;
+   float: right;       */
+}
+
+
+p{
+  font-size: 24px;
+  font-family: 'Raleway', sans-serif;
+
+/* display: inline-block;
+   float: left;        */
+}
+/* based on what the browsers font size is (typically 16, so 16*1.5=24px)
