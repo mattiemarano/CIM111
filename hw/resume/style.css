@@ -2,21 +2,43 @@
 html,body{
   background-color: LavenderBlush;
   color: black;
-  font-family: 'Fira Sans', sans-serif;
-}
-
-h1 {
-  font-size: 24pt;
-/*background-color : pink;*/
-}
-
-h3 {
+  font-family: 'Big Shoulders Display', cursive;
   font-size: 16pt;
 }
 
-p {
-font-size: 12pt;
+#name {
+  font-size: 50pt;
+  text-align: center;
+  font-weight: 900;
 
+/*background-color : pink;*/
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24pt;
+  text-align: center;
+}
+
+p {
+font-size: 16pt;
+text-align: center;
+}
+
+
+                                    /*LINKS*/
+
+a:link{
+  text-decoration: none;
+  color: #708090;
 }
 
 a:hover{
@@ -24,28 +46,40 @@ background-color: HotPink;
 color: white;
 }
 
-#email {
-  text-decoration: none;
-  color: LightSlateGray;
-}
-
-a{
-  text-decoration: none;
-}
-
 a:visited{
   text-decoration: none;
-  color: LightSlateGray;
+  color: #708090;
 }
 
-img {
+#email {
+  text-decoration: none;
+  color: #708090;
+}
+                              /* END LINKS */
+#profile {
   float:right;
+  border-radius: 50%;
   padding-left: 10px;
-  padding-right: 10px; 
+  padding-right: 10px;
+}
+
+/* example photos of designs */
+.class {
+ display: inline;
+ margin-left: 20px;
+ margin-right: 20px;
+ width: 15%;
+ border: 1px solid black;
 }
 
 #cover {
-  float: right;
+  width:10%;
+}
+
+#TableContents{
+  width:20%;
+}
+
 }
 
 section{
@@ -59,5 +93,14 @@ section{
 float: right
 }
 
+.lines{
+  border-color: pink;
+}
+
+
+
+/*
   font-family: 'Raleway', sans-serif;
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+    font-family: 'Fira Sans', sans-serif;
