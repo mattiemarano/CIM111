@@ -55,7 +55,7 @@ a:visited{
   text-decoration: none;
   color: #708090;
 }
-                              /* END LINKS */
+/* END LINKS */
 #profile {
   float:right;
   border-radius: 50%;
@@ -79,8 +79,6 @@ a:visited{
 #TableContents{
   width:20%;
 }
-
-
 
 section{
   padding-top:10px;
