@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+} /* the '*' will select everything on the page; getting rid of defaults */
+
+html {
+  font-size: 21 px;
+  line-height: 1.7;
+  font-family: sans-serif;
+} /*most general setup at the root level*/
+
+body{
+  background-color: pink;
+  margin: 0;
+} /* all the content on the page */
+
+main{
+  background-color: white;
+  width: 90vw;  /*90% of view width*/
+  height: 50vh;
+  margin: 0;
+  padding-top: 20px; /*pushed down the h1 (the child) down 20 px*/
+}
+
+article.my_box, .my_box{ /*can use either or */
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: lemonChiffon;  
+}
+
+h1{
+  background-color: deepPink;
+  width: 20vw;
+  height: 25vh;
+  margin: auto; /* apply to all sides if there is only one value */ /*centered to the main box not the whole page */
+  border: 3px solid #bada55;
+  border-radius: 30px;
+  text-align: inherit; /* saying "do whatever the parent does"*/
+}
