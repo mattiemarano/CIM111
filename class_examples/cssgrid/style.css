@@ -1,0 +1,45 @@
+.grid_container {
+  display: grid;
+  grid-template-areas: /*how to lay out something; understands the positioning because of the grid area tag */
+    "yellow . red" /*each line of code is a row on the page; each word is a column*/
+    "yellow . red" /* a period adds a gap in a row in the grid */
+    "blue blue blue";
+  grid-gap: 1.4rem; /* whatever you set your font size as (in pixels), that measurement = 1 rem; after you know this, you can use rem for proportions/percent changes for sizing on your web page*/
+  /*grid-row-gap: 10px; */
+}
+
+html {
+  font-size: 20px; /* in this case 1 rem = 21 px */
+  line-height: 1.7;
+  font-family: sans-serif;
+}
+
+/*body {
+  font-size: 1.5rem;
+} */
+
+.box {
+  border: 1px solid #000000; /* thickness, type of line, color */
+  font-family: monospace;
+  min-height: 300px; /*boxes are usually sized to the content, so this sets a minimum size for the boxes*/
+
+}
+
+.yellow {
+  grid-area: yellow;
+  background-color: yellow;
+}
+
+.red {
+  grid-area: red;
+  background-color: red;
+}
+
+.blue {
+  grid-area: blue;
+  background-color: blue;
+}
+
+h2 {
+  text-align:center;
+}

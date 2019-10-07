@@ -1,0 +1,14 @@
+
+@media only screen and (min-width: 800px) {
+
+    body{
+      margin: 1% 2%;
+    }
+}
+
+
+
+
+body {
+  background-color: lightBlue;
+}

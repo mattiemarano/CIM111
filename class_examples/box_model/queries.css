@@ -1,0 +1,49 @@
+/* only supports older browswers
+@media means we are doing media queries*/
+
+/*have to rewrite all the styling for how you want things to change when screen size changed */
+
+@media only screen and (max-width: 800px) {
+  /* all the styling for when the screen is 800 px or smaller */
+  body{
+    background-color: lightBlue; /* when the screen is smaller than blue, the background color of the body will be blue, instead of pink like specified in style.css */
+  }
+}
+
+@media only screen and (min-width: 1200 px)
+/* styles for when the screen is 1200 px or wider */
+{
+
+}
+
+@media only print{
+
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 700px){
+  body, main, h1, article.my_box{
+    /* style the screen when it is between 600 and 699 pixels wide*/
+    background-color: black;
+    color: black;
+    border: 0px;
+
+  }
+}
+
+
+
+/*
+In math there are inequalities:
+
+>, <, =
+
+max-width ==> chekc the width, and do [xxxxxxxx]
+if width < max-width value
+
+min-width ==> check the width and do [YYYYYYY]
+if width > mind-width value
+
+min-width & max-width ==> check the width, and do [ZZZZZZZ] if min-width < width < max-width
+
+*/ 
