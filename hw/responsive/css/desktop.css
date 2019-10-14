@@ -1,14 +1,250 @@
 
 @media only screen and (min-width: 800px) {
 
-    body{
+body{
       margin: 1% 2%;
     }
 }
 
-
-
+header {
+  background: white;
+  padding-bottom: 50px;
+}
 
 body {
-  background-color: lightBlue;
+  background-color: white;
+}
+
+h3{
+  text-align: center;
+}
+
+a:link{
+  text-decoration: none;
+  color: green;
+}
+
+a:hover{
+background-color: red;
+color: white;
+}
+
+a:visited{
+  text-decoration: none;
+  color: green;
+}
+
+#title {
+  padding-left: 300px;
+  padding-botton: 50px;
+} /*exploration italy*/
+
+.images {
+  height: 200px;
+  width: 250px;
+}
+
+nav{
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.tourist-attractions {
+  display: grid;
+  grid-template-areas:
+    "attractions-heading . ."
+    "colosseum-title colosseum-image colosseum-info"
+    "basilica-title basilica-image basilica-info"
+    "chapel-title chapel-image chapel-info"
+    "fountain-title fountain-image fountain-info"
+    "pantheon-title pantheon-image pantheon-info"
+    "forum-title forum-image forum-info"
+    "steps-title steps-image steps-info";
+  grid-gap: 30px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  grid-template-columns: 15% 30% 50%;
+}
+
+.attractions{
+grid-area: attractions-heading;
+}
+
+#colosseum {
+  grid-area: colosseum-image;
+
+} /*picture of the colosseum */
+
+#colosseumId{
+  grid-area: colosseum-title;
+}
+
+.colosseum {
+  grid-area: colosseum-info;
+}
+
+#basilica {
+  grid-area: basilica-image;
+}
+
+#basilicaId {
+  grid-area: basilica-title;
+}
+
+.basilica {
+  grid-area: basilica-info;
+}
+
+#treviFountain{
+  grid-area: fountain-image;
+}
+
+#fountainId {
+  grid-area: fountain-title;
+}
+
+.fountain {
+  grid-area: fountain-info;
+}
+
+#pantheon{
+  grid-area: pantheon-image;
+}
+
+#pantheonId{
+  grid-area: pantheon-title;
+}
+
+.pantheon {
+  grid-area: pantheon-info;
+}
+#forum{
+  grid-area: forum-image;
+}
+
+#forumId {
+  grid-area: forum-title;
+}
+
+.forum {
+  grid-area: forum-info;
+}
+#steps{
+  grid-area: steps-image;
+}
+
+#stepsId{
+  grid-area: steps-title;
+}
+
+.steps {
+  grid-area: steps-info;
+}
+
+#sistineChapel{
+  grid-area: chapel-image;
+}
+
+#chapelId{
+  grid-area: chapel-title;
+}
+
+.chapel {
+  grid-area: chapel-info;
+}
+
+
+.destination-grid {
+  display: grid;
+  grid-template-areas:
+    "rome florence tuscany milan"
+    "postiano capri sicily venice";
+}
+
+.rome {
+  grid-area: rome;
+}
+.florence{
+  grid-area: florence;
+}
+.tuscany{
+  grid-area: tuscany;
+}
+.milan{
+  grid-area: milan;
+}
+.postiano{
+  grid-area: postiano;
+}
+.capri{
+  grid-area:capri;
+}
+.sicily{
+  grid-area: sicily;
+}
+.venice{
+  grid-area:venice;
+}
+
+.florence-destinations{
+  display: grid;
+  grid-template-areas:
+    "ponte-header palazzo-header"
+    "ponte-vecchio palazzo-pitti"
+    "piazza-header corsi-header"
+    "piazza-santo-spirito corsi-gardens";
+    grid-gap: 30px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.ponte-vecchio{
+  grid-area: ponte-vecchio;
+  text-align: center;
+}
+.palazzo-pitti{
+  grid-area: palazzo-pitti;
+  text-align: center;
+}
+.piazza-santo-spirito{
+  grid-area: piazza-santo-spirito;
+  text-align: center;
+}
+.corsi-gardens{
+  grid-area: corsi-gardens;
+  text-align: center;
+}
+#ponte{
+  grid-area: ponte-header;
+  text-align: center;
+}
+#palazzo{
+  grid-area: palazzo-header;
+  text-align: center;
+}
+#piazza{
+  grid-area: piazza-header;
+  text-align: center;
+}
+#corsi{
+  grid-area: corsi-header;
+  text-align: center;
+}
+
+.articles {
+  display: grid;
+  grid-template-areas:
+    "gelato wine-tour top-trattoria eat-local";
+  grid-gap: 30px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  padding-top:50px;
+}
+.articles img{
+  width:100%; 
 }
