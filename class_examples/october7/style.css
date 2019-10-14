@@ -1,0 +1,28 @@
+nav a{
+  display:inline-block;
+} /* ensuring the links are always displaying in line next to each other */
+
+
+.grid-1-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-areas:
+    "chihuahua-heading ."
+    "chihuahua-pic chihuahua-info";
+  max-width: 630px;
+  grid-gap: 30px;
+  margin: 0 auto;
+} /* 2 columns, 2 rows */
+
+.chihuahua {
+  grid-area: chihuahua-heading;
+}
+
+.grid-1-picture {
+  grid-area: chihuahua-pic;
+  height: 200px;
+}
+
+.graf {
+  grid-area: chihuahua-info;
+}
