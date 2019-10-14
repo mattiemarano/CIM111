@@ -2,7 +2,6 @@
 body{
       margin: 1% 2%;
     }
-}
 
 header {
   background: white;
@@ -245,4 +244,13 @@ grid-area: attractions-heading;
 }
 .articles img{
   width:100%;
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    color: white;
+    background-color: black;
+  }
+
 }
