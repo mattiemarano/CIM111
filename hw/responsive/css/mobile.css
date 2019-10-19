@@ -1,17 +1,26 @@
 @media only screen and (max-width: 600px) {
 
 
+#title {
+    padding-left: 250px;
+    padding-bottom: 50px;
+} /*exploration italy*/
+
 body{
-  margin: 2% 4%;
+  margin: 4%;
+  width: 300%;
+
 }
 
 nav{
   padding-bottom: 50px;
   text-align: center;
+  font-size: 20pt;
 }
 
 h3{
   text-align: center;
+  font-size: 25pt;
 }
 
 a:link{
@@ -36,11 +45,13 @@ a:visited{
 
 
 /* Popular Destinations in Italy */
+
 .destination-grid {
   display: grid;
   grid-template-areas:
     "rome florence tuscany milan"
     "postiano capri sicily venice";
+  margin: 4%;
 }
 
 .rome {
@@ -67,12 +78,18 @@ a:visited{
 .venice{
   grid-area:venice;
 }
+
+.destination-ids{
+  font-size: 20pt;
+  text-align: center;
+}
 /* end of popular destinations */
 
 /* Rome */
 
-#rome-introduction {
-  padding-left: 150px;
+#rome-introduction{
+  margin: 4%;
+  text-align: center;
 }
 
 /* toursits attractions in rome */
@@ -101,21 +118,29 @@ a:visited{
     "steps-title"
     "steps-image"
     "steps-info";
-    grid-gap: 30px;
-    margin-left: 150px;
-    grid-template-columns: 400%;
-}
-.tourist-attractions{
-  text-align: center;
+  grid-template-columns: 100% 0% 0%;
+  text-align: justify;
 }
 
+.rome-images {
+  padding-left: 250px;
+  width: 600px;
+  height: 400px;
+}
+
+.ids{
+  text-align: center;
+  font-size: 20pt;
+}
 .attractions{
-grid-area: attractions-heading;
+  grid-area: attractions-heading;
+  text-align: center;
+  font-size: 20pt;
+
 }
 
 #colosseum {
   grid-area: colosseum-image;
-  text-align: center;
 
 } /*picture of the colosseum */
 
@@ -125,6 +150,8 @@ grid-area: attractions-heading;
 
 .colosseum {
   grid-area: colosseum-info;
+  margin: 4%;
+  text-align: center;
 }
 
 #basilica {
@@ -137,6 +164,8 @@ grid-area: attractions-heading;
 
 .basilica {
   grid-area: basilica-info;
+  margin: 4%;
+  text-align: center;
 }
 
 #treviFountain{
@@ -149,6 +178,8 @@ grid-area: attractions-heading;
 
 .fountain {
   grid-area: fountain-info;
+  margin: 4%;
+  text-align: center;
 }
 
 #pantheon{
@@ -157,6 +188,8 @@ grid-area: attractions-heading;
 
 #pantheonId{
   grid-area: pantheon-title;
+  margin: 4%;
+  text-align: center;
 }
 
 .pantheon {
@@ -172,6 +205,8 @@ grid-area: attractions-heading;
 
 .forum {
   grid-area: forum-info;
+  margin: 4%;
+  text-align: center;
 }
 #steps{
   grid-area: steps-image;
@@ -183,6 +218,8 @@ grid-area: attractions-heading;
 
 .steps {
   grid-area: steps-info;
+  margin: 4%;
+  text-align: center;
 }
 
 #sistineChapel{
@@ -195,10 +232,15 @@ grid-area: attractions-heading;
 
 .chapel {
   grid-area: chapel-info;
+  margin: 4%;
+  text-align: center;
 }
 /* end of popular destinations in Rome */
 
-
+.florence-introduction{
+  margin: 4%;
+  text-align: center;
+}
 /* Destinations in Florence */
 .florence-destinations{
   display: grid;

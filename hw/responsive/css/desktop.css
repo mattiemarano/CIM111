@@ -1,11 +1,15 @@
 
 body{
       margin: 1% 2%;
+      font-size: 16pt;
     }
-
+main{
+  display: block;
+}
 header {
   background: white;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 
@@ -30,7 +34,7 @@ a:visited{
 
 #title {
   padding-left: 300px;
-  padding-botton: 50px;
+  padding-bottom: 50px;
 } /*exploration italy*/
 
 .images {
@@ -180,6 +184,11 @@ grid-area: attractions-heading;
 }
 .venice{
   grid-area:venice;
+}
+
+.destination-ids{
+  font-size: 20pt;
+  text-align: center;
 }
 
 .florence-destinations{
