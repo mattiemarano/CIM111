@@ -3,13 +3,20 @@ body{
       margin: 1% 2%;
       font-size: 16pt;
     }
+
 main{
   display: block;
 }
+
 header {
   background: white;
   padding-bottom: 30px;
   padding-top: 30px;
+}
+
+footer{
+    font-size: 10pt;
+    color: gray;
 }
 
 h3{
