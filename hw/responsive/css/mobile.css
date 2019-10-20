@@ -9,8 +9,8 @@
 body{
   margin: 4%;
   width: 300%;
-
 }
+
 
 nav{
   padding-bottom: 50px;
@@ -21,6 +21,14 @@ nav{
 h3{
   text-align: center;
   font-size: 25pt;
+}
+
+h4{
+  font-size: 22pt;
+}
+
+h5{
+  font-size: 20pt;
 }
 
 a:link{
@@ -39,8 +47,8 @@ a:visited{
 }
 
 .images {
-  height: 200px;
-  width: 250px;
+  height: 320px;
+  width: 400px;
 }
 
 
@@ -49,8 +57,11 @@ a:visited{
 .destination-grid {
   display: grid;
   grid-template-areas:
-    "rome florence tuscany milan"
-    "postiano capri sicily venice";
+    "rome florence"
+    "tuscany milan"
+    "postiano capri"
+    "sicily venice";
+  grid-gap: 10px;
   margin: 4%;
 }
 
@@ -245,17 +256,38 @@ a:visited{
 .florence-destinations{
   display: grid;
   grid-template-areas:
-    "ponte-header palazzo-header"
-    "ponte-vecchio palazzo-pitti"
-    "piazza-header corsi-header"
-    "piazza-santo-spirito corsi-gardens";
-    grid-gap: 30px;
-    margin: 0 auto;
-    padding-bottom: 50px;
-    padding-left: 200px;
-    padding-right: 20px;
+    "ponte-header"
+    "ponte-vecchio"
+    "palazzo-header"
+    "palazzo-pitti"
+    "piazza-header"
+    "piazza-santo-spirito"
+    "corsi-header"
+    "corsi-gardens";
+  grid-template-columns: 100% 0% 0%;
+  max-width: 70%;
 }
 
+.paragraph{
+
+}
+
+#ponte{
+  grid-area: ponte-header;
+  text-align: center;
+}
+#palazzo{
+  grid-area: palazzo-header;
+  text-align: center;
+}
+#piazza{
+  grid-area: piazza-header;
+  text-align: center;
+}
+#corsi{
+  grid-area: corsi-header;
+  text-align: center;
+}
 
 .ponte-vecchio{
   grid-area: ponte-vecchio;
@@ -273,34 +305,17 @@ a:visited{
   grid-area: corsi-gardens;
   text-align: center;
 }
-#ponte{
-  grid-area: ponte-header;
-  text-align: center;
-}
-#palazzo{
-  grid-area: palazzo-header;
-  text-align: center;
-}
-#piazza{
-  grid-area: piazza-header;
-  text-align: center;
-}
-#corsi{
-  grid-area: corsi-header;
-  text-align: center;
-}
+
 /* end of destinations in Florence */
 
 /* extra articles about Florence */
 .articles {
   display: grid;
   grid-template-areas:
-    "gelato wine-tour top-trattoria eat-local";
-  /* grid-gap: 30px; */
-  margin: 0 auto;
-  padding-bottom: 20px;
-  padding-top:50px;
-  grid-template-rows: 100%;
+    "gelato wine-tour"
+    "top-trattoria eat-local";
+  margin: 4%;
+  /* grid-template-rows: 100%; */
 } /* end of extra articles about Florence */
 
 .articles img{
