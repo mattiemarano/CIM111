@@ -1,0 +1,74 @@
+html {
+  margin: 3%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50pt;
+  color: maroon;
+}
+
+h3 {
+  text-align: center;
+  font-size: 25pt;
+}
+
+.images {
+  width: 300px;
+}
+
+#map {
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  grid-area: map;
+}
+
+.destinations {
+  grid-area: destinations;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 22pt;
+}
+
+.popular_destinations {
+  display: grid;
+  grid-template-areas: "map destinations";
+}
+
+.marakesh-market {
+  display: grid;
+  margin: 0 auto;
+  grid-template-areas:
+    "market-1 market-2 market-3"
+    "market-4 market-5 market-6";
+  grid-column-gap: 5pt;
+  grid-gap: 20pt;
+  width: 100%;
+}
+
+#market-1 {
+  grid-area: market-1;
+}
+
+#market-2 {
+  grid-area: market-2;
+}
+
+#market-3 {
+  grid-area: market-3;
+}
+
+#market-4 {
+  grid-area: market-4;
+}
+
+#market-5 {
+  grid-area: market-5;
+}
+
+#market-6 {
+  grid-area: market-6;
+}

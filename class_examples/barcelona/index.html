@@ -37,10 +37,41 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    <!-- <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script> -->
    <script type="text/javascript">
+      var bcnClicked = false;
+      var imgBig = "yes";
       $(document).ready(function() {
-         $("#bcn").css("font-size", "60px");
+         $("#bcn").click(function() {
+            if (bcnClicked === false) {
+               //bcnClicked is one. we have to make the font small
+               $("#bcn").css("font-size", "60px");
+               bcnClicked = true;
+            } else {
+               //bcnClicked is zero. we have to make the font big
+               $("#bcn").css("font-size", "20px");
+               bcnClicked = false;
+            }
+         }); // end of bcn clicked
+
+         $("#title").click(function() {
+            $("#title").css("color", "red");
+         }); //end of title clicked
+
+         $("#bcn").click(function() {
+            if (imgBig === "no") {
+               //we havent lcicked the image, make it go big
+               $("#main_pic").css("width", "800px")
+               imgBig = "yes";
+            } else {
+               //make it go small
+               $("#main_pic").css("width", "400px")
+               imgBig = "no";
+            }
+
+         });
+
+
          $("#a_box").html("<p>This is a paragraph.</p>");
-      });
+      }); //end of .readyfunction
 
    </script>
 </body>
