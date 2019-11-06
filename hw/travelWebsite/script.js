@@ -21,7 +21,7 @@ $(document).ready(function() {
    })
 
    $("h1").mouseleave(function() {
-      $("h1").css("font-size", "60px");
+      $("h1").css("font-size", "80px");
    })
 
 

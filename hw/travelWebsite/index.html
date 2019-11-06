@@ -6,26 +6,44 @@
    <title>This is a travel website about Morocco. This site will utilize CSS and jQuery.</title>
    <link href=<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
    <header>
-
       <h1>Visit Morocco</h1>
    </header>
+
+   <section>
+     <img class="header-photos"src="images/haddou_9.jpg" alt="">
+     <img class="header-photos"src="images/tagine.jpg" alt="">
+     <img class="header-photos"src="images/haddou_1.jpg" alt="">
+     <img class="header-photos"src="images/sahara_4.jpg" alt="">
+     <img class="header-photos"src="images/haddou_13.jpg" alt="">
+     <img class="header-photos"src="images/market_11.jpg" alt="">
+   </section>
+
    <nav>
       <a href="#about">About Morocco</a>
-      <a href="destinations_heading">Cities</a>
+      <a href="#destinations_heading">Cities</a>
       <a href="#fez">Fez</a>
-      <a href="marrakesh">Marrakesh</a>
+      <a href="#marrakesh">Marrakesh</a>
    </nav>
-   <main>
 
-      <img id="flag" src="images/flag.png" alt="flag">
-      <p id="about_flag"> </p>
+   <hr>
+   
+   <main>
+      <section class="flag">
+
+         <img id="flag" src="images/flag.png" alt="flag">
+         <p id="about_flag"> </p>
+      </section>
+
+      <h3 id="about">About Morocco</h3>
       <section class="intro">
-         <h3 id="about">About Morocco</h3>
+
          <p id="intro_1">Morocco is a soverign state located in the North of Morcoos, overlooking the Mediterranean Sea to the north and the Atlantic Ocean to the west. Given the country's location at he mouth of the Mediterranean, Morocco attracted
             European influences, splitting the terrority into French and Spanish regions, however it regained independence in 1956. Morocco wields significant influence in both Africa and the Arab world, making it a regional power.</p>
          <p id="intro_2">Morocco's preodominant relgion is Islam, and its official languages are Arabic and Berber. French is also widely spoken in the country given the influence up untilt he 1950s. Moroccan culture is a blend of Berber, Arab, Sephardi
@@ -34,6 +52,9 @@
          <p id="intro_3">Tourism is one of the most important sectors in Moroccan economy, focusing on the country's coast, culture, and history. The government of Morocco launched its Vision 2020, which outlines plans to make MOrocco one of the top
             tourist destinatins in the world by 2020. Due to its close proximity to Europe, most of the tourists tend to be from Europe, 20% being French. Many touritsts travel to Morocco to experience its culture, especially through its ancient cities.
             However, Morocco also thrills visitors with coastal cities and more adventurous activities near the Atlas Mountains. </p>
+         <img id="intro_images_1" src="images/casablanca_6.jpg" alt="">
+         <img id="intro_images_2" src="images/morocco_2.jpg" alt="">
+         <img id="intro_images_3" src="images/sahara_1.jpg" alt="">
       </section>
 
       <h3 id="destinations_heading">Popular Cities</h3>
@@ -45,7 +66,7 @@
             <li>Marrakesh</li>
             <li>Rabat</li>
             <li>Tangier</li>
-            <li>Fez</li>
+            <li>Fes</li>
             <li>Chefchaouen</li>
          </ol>
          <img id="map" class="images" src="images/map.png" alt="map of morocco">
@@ -61,9 +82,22 @@
 
 
       <section id="fez">
-         <h3>Fez</h3>
-         <div class="">
-            <h4>Al-Attarine Madrasa</h4>
+         <h3>Fes</h3>
+
+         <div class="fez-intro">
+
+           <img id="fes-image" src="images/fes_1.jpg" alt="">
+            <p id="about-fes">Fes is a northeastern Moroccan city often referred to as the country’s cultural capital. It’s primarily known for its Fes El Bali walled medina, with medieval Marinid architecture, vibrant souks and old-world atmosphere. The
+               medina is home to religious schools such as the 14th-century Bou Inania and Al Attarine, both decorated with elaborate cedar carvings and ornate tile work.</p>
+         </div>
+
+
+         <h4>Al-Attarine Madrasa</h4>
+
+         <div class="al-attarine-madrasa">
+
+           <div class="madrasa-info">
+
             <p>Built in the 14th century, the al-Attarine Madrasa stands at the entrance of a spice and perfume market in the spiritual center of Fez, the second largest city in Morocco. The highlight of the small madrasa is its courtyard, its floors, and
                walls exquisitely decorated in the traditional patterns of Marinid craftsmanship.</p>
             <p>The al-Attarine Madrasa, whose name means “the madrasa of the perfumers,” takes its name from its location at the entrance to a historic spice and perfume market in Fez. But unlike the busy souk that it borders, the al-Attarine Madrasa is a
@@ -73,15 +107,31 @@
             <p>The courtyard is one of the finest examples of Marinid craftsmanship in Fez. The walls are decorated with carved stucco ornamentation, sections of Arabic calligraphy, and intricate zellige mosaic tiles forming colorful geometric patterns.
                Marble columns rise up from the floor holding elaborately carved wooden arches and cornices, the delicacy and detail of which almost defies belief. The floor is also covered in tiles, albeit far simpler than those decorating the walls, whose
                geometric patterns are considered too sacred to be stepped upon</p>
-         </div>
+      </div>
+
+      <div class="madrasa-images">
+
+
+            <img id="madrasa-1" src="images/Al-Attarine-Madrasa-1.jpg" alt="">
+            <img id="madrasa-2" src="images/madrasa-2.jpg" alt="">
+      </div>
+
+      </div>
       </section>
+
       <section id="marrakesh" class="marrakesh">
-         <h3>Marrakesh</h3>
+         <h3 id="marrakes-heading">Marrakesh</h3>
 
          <div class="info">
 
-            <p>Marrakesh, a former imperial city in western Morocco, is a major economic center and home to mosques, palaces and gardens. The medina is a densely packed, walled medieval city dating to the Berber Empire, with mazelike alleys where thriving
-               souks (marketplaces) sell traditional textiles, pottery and jewelry. A symbol of the city, and visible for miles, is the Moorish minaret of 12th-century Koutoubia Mosque.</p>
+            <div class="marrakesh-intro">
+
+               <p id="marrakesh-intro">Marrakesh, a former imperial city in western Morocco, is a major economic center and home to mosques, palaces and gardens. The medina is a densely packed, walled medieval city dating to the Berber Empire, with mazelike
+                  alleys where thriving
+                  souks (marketplaces) sell traditional textiles, pottery and jewelry. A symbol of the city, and visible for miles, is the Moorish minaret of 12th-century Koutoubia Mosque.</p>
+               <img id="marrakesh-image" src="images/marrakesh.jpg" alt="">
+            </div>
+
             <div class="ben-youssef">
                <h4>Ben Youssef Madrasa</h4>
                <p>The Ben Youssef Madrasa is the largest madrasa in Morocco and one of the largest and most important in North Africa. Founded in the 14th century and later expanded, it ceased to function as an Islamic college in 1960, but remains one of the
@@ -97,10 +147,10 @@
          </div>
 
 
-         <div class="market_images">
-            <img class="images_2" src="images/market_5.jpg" alt="">
-            <img class="images_2" src="images/market_1.jpg" alt="">
-            <img class="images_2" src="images/market_2.jpg" alt="">
+         <div class="ben_youssef_images">
+            <img id="ben-youssef-1" class="images_2" src="images/market_5.jpg" alt="">
+            <img id="ben-youssef-2"class="images_2" src="images/market_1.jpg" alt="">
+            <img id="ben-youssef-3"class="images_2" src="images/market_2.jpg" alt="">
          </div>
 
          <div class="souks">
@@ -110,9 +160,17 @@
             <section id="about_souks_info">
 
             </section>
-            <!-- <p id="about_souks">About Souks</p> -->
 
-            <p><b>Tips and Tricks for the Souks</b></p>
+            <div class="marakesh-market">
+               <img class="images" id="market-1" src="images/market_6.jpg" alt="">
+               <img class="images" id="market-2" src="images/market_7.jpg" alt="">
+               <img class="images" id="market-3" src="images/market_9.jpg" alt="">
+               <img class="images" id="market-4" src="images/marakesh_1.jpg" alt="">
+               <img class="images" id="market-5" src="images/marakesh_2.jpg" alt="">
+               <img class="images" id="market-6" src="images/marakesh_3.jpg" alt="">
+            </div>
+
+            <p id="tips"><b>Tips and Tricks for the Souks</b></p>
             <dl>
                <dt>Absorb the Chaos</dt>
 
@@ -142,14 +200,6 @@
 
             </dl>
 
-            <div class="marakesh-market">
-               <img class="images" id="market-1" src="images/market_6.jpg" alt="">
-               <img class="images" id="market-2" src="images/market_7.jpg" alt="">
-               <img class="images" id="market-3" src="images/market_9.jpg" alt="">
-               <img class="images" id="market-4" src="images/marakesh_1.jpg" alt="">
-               <img class="images" id="market-5" src="images/marakesh_2.jpg" alt="">
-               <img class="images" id="market-6" src="images/marakesh_3.jpg" alt="">
-            </div>
          </div>
       </section>
 
