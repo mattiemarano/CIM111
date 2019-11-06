@@ -37,7 +37,7 @@ a:hover {
   grid-template-areas: "flag about_flag";
   margin-left: auto;
   margin-right: auto;
-  grid-column: 60% 30%;
+  
 }
 
 #flag {
