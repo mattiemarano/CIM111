@@ -1,5 +1,38 @@
-html {
+html,
+body {
   margin: 3%;
+  font-family: "Open Sans", sans-serif;
+  background-color: Gainsboro;
+}
+
+/* body {
+  background-image: url("images/background_2.jpg");
+  background-repeat: repeat-x;
+} */
+
+#about_flag {
+  color: red;
+  font-style: italic;
+}
+
+nav {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: maroon;
+}
+
+#flag {
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
 }
 
 h1 {
@@ -15,6 +48,13 @@ h3 {
 
 .images {
   width: 300px;
+}
+.images_2 {
+  width: 300px;
+  height: 250px;
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #map {
@@ -36,6 +76,10 @@ h3 {
 .popular_destinations {
   display: grid;
   grid-template-areas: "map destinations";
+}
+
+.market_images {
+  display: inline;
 }
 
 .marakesh-market {
@@ -71,4 +115,17 @@ h3 {
 
 #market-6 {
   grid-area: market-6;
+}
+
+#about_souks {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: maroon;
+  color: white;
+  font-size: 10pt;
+}
+
+#about_souks_info {
+  padding-top: 20px;
 }

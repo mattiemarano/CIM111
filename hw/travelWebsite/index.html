@@ -4,19 +4,28 @@
 <head>
    <meta charset="utf-8">
    <title>This is a travel website about Morocco. This site will utilize CSS and jQuery.</title>
+   <link href=<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
    <header>
+
       <h1>Visit Morocco</h1>
    </header>
    <nav>
-
+      <a href="#about">About Morocco</a>
+      <a href="destinations_heading">Cities</a>
+      <a href="#fez">Fez</a>
+      <a href="marrakesh">Marrakesh</a>
    </nav>
    <main>
+
+      <img id="flag" src="images/flag.png" alt="flag">
+      <p id="about_flag"> </p>
       <section class="intro">
-         <h3>About Morocco</h3>
+         <h3 id="about">About Morocco</h3>
          <p id="intro_1">Morocco is a soverign state located in the North of Morcoos, overlooking the Mediterranean Sea to the north and the Atlantic Ocean to the west. Given the country's location at he mouth of the Mediterranean, Morocco attracted
             European influences, splitting the terrority into French and Spanish regions, however it regained independence in 1956. Morocco wields significant influence in both Africa and the Arab world, making it a regional power.</p>
          <p id="intro_2">Morocco's preodominant relgion is Islam, and its official languages are Arabic and Berber. French is also widely spoken in the country given the influence up untilt he 1950s. Moroccan culture is a blend of Berber, Arab, Sephardi
@@ -41,13 +50,17 @@
          </ol>
          <img id="map" class="images" src="images/map.png" alt="map of morocco">
       </section>
-      <section class="section_2">
+
+
+      <!-- <section class="section_2">
          <h3>Ksar of Ait ben Haddou</h3>
          <p>The Moroccan term ‘Ksar’ refers to a group of pisé buildings strategically clustered together and surrounded with defensive walls and corner watch towers. While there are many striking ksar across Southern Morocco, Ait Ben Haddou, located at
             the foothills of the High Atlas mountains along the old caravan trading route from Marrakesh to the Sahara, is perhaps Morocco’s finest example. The ksar was added to UNESCO’s world heritage list in 1987 and was mainly selected due to the
             construction remaining to preserve it’s architectural authenticity by illustrating the main elements of a pisé earthen build ksar dating from the 17th Century in Southern Morocco.</p>
-      </section>
-      <section>
+      </section> -->
+
+
+      <section id="fez">
          <h3>Fez</h3>
          <div class="">
             <h4>Al-Attarine Madrasa</h4>
@@ -62,27 +75,44 @@
                geometric patterns are considered too sacred to be stepped upon</p>
          </div>
       </section>
-      <section class="marrakesh">
+      <section id="marrakesh" class="marrakesh">
          <h3>Marrakesh</h3>
-         <p>Marrakesh, a former imperial city in western Morocco, is a major economic center and home to mosques, palaces and gardens. The medina is a densely packed, walled medieval city dating to the Berber Empire, with mazelike alleys where thriving
-            souks (marketplaces) sell traditional textiles, pottery and jewelry. A symbol of the city, and visible for miles, is the Moorish minaret of 12th-century Koutoubia Mosque.</p>
-         <div class="ben-youssef">
-            <h4>Ben Youssef Madrasa</h4>
-            <p>The Ben Youssef Madrasa is the largest madrasa in Morocco and one of the largest and most important in North Africa. Founded in the 14th century and later expanded, it ceased to function as an Islamic college in 1960, but remains one of the
-               finest buildings in Marrakesh.</p>
-            <p>The college was founded in the 14th century during the reign of the Marinid sultan Abu al-Hassan, taking its name from the neighboring Ben Youssef Mosque. Initially a modest madrasa, it was later reconstructed during the Saadian Dynasty by the
-               Abdallah al-Ghalib, the second Saadian sultan of Morocco.</p>
-            <p>Upon the completion of these works in 1565, the Ben Youssef Madrasa stood as one of the largest and most splendid theological colleges in North Africa. For more than four centuries, it housed as many as 900 students, an impressive feat
-               considering the cramped nature of the building’s 130 student dormitory cells.</p>
-            <p>The madrasa ceased to function as a college in 1960 but was renovated and opened to the public in 1982. Historical significance aside, the madrasa draws in visitors who come to marvel at its intricate decorations that have drawn comparisons
-               with the Alhambra in Granada, Spain (and leading some to conclude that artists may have been brought from Andalusia to work on the madrasa).</p>
-            <img class="images" src="images/market_5.jpg" alt="">
-            <img class="images" src="images/market_1.jpg" alt="">
-            <img class="images" src="images/market_2.jpg" alt="">
+
+         <div class="info">
+
+            <p>Marrakesh, a former imperial city in western Morocco, is a major economic center and home to mosques, palaces and gardens. The medina is a densely packed, walled medieval city dating to the Berber Empire, with mazelike alleys where thriving
+               souks (marketplaces) sell traditional textiles, pottery and jewelry. A symbol of the city, and visible for miles, is the Moorish minaret of 12th-century Koutoubia Mosque.</p>
+            <div class="ben-youssef">
+               <h4>Ben Youssef Madrasa</h4>
+               <p>The Ben Youssef Madrasa is the largest madrasa in Morocco and one of the largest and most important in North Africa. Founded in the 14th century and later expanded, it ceased to function as an Islamic college in 1960, but remains one of the
+                  finest buildings in Marrakesh.</p>
+               <p>The college was founded in the 14th century during the reign of the Marinid sultan Abu al-Hassan, taking its name from the neighboring Ben Youssef Mosque. Initially a modest madrasa, it was later reconstructed during the Saadian Dynasty by
+                  the
+                  Abdallah al-Ghalib, the second Saadian sultan of Morocco.</p>
+               <p>Upon the completion of these works in 1565, the Ben Youssef Madrasa stood as one of the largest and most splendid theological colleges in North Africa. For more than four centuries, it housed as many as 900 students, an impressive feat
+                  considering the cramped nature of the building’s 130 student dormitory cells.</p>
+               <p>The madrasa ceased to function as a college in 1960 but was renovated and opened to the public in 1982. Historical significance aside, the madrasa draws in visitors who come to marvel at its intricate decorations that have drawn comparisons
+                  with the Alhambra in Granada, Spain (and leading some to conclude that artists may have been brought from Andalusia to work on the madrasa).</p>
+            </div>
          </div>
+
+
+         <div class="market_images">
+            <img class="images_2" src="images/market_5.jpg" alt="">
+            <img class="images_2" src="images/market_1.jpg" alt="">
+            <img class="images_2" src="images/market_2.jpg" alt="">
+         </div>
+
          <div class="souks">
             <h4>Souks and the Night Market</h4>
-            <p>Guide to the Souks</p>
+
+            <button id="about_souks">Learn More About Souks</button>
+            <section id="about_souks_info">
+
+            </section>
+            <!-- <p id="about_souks">About Souks</p> -->
+
+            <p><b>Tips and Tricks for the Souks</b></p>
             <dl>
                <dt>Absorb the Chaos</dt>
 
