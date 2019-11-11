@@ -1,0 +1,333 @@
+html,
+body {
+  margin: 3%;
+  font-family: "Open Sans", sans-serif;
+  background-color: white;
+}
+
+.header-photos{
+  display: inline;
+  width: 175px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+}
+
+nav {
+  text-align: center;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: maroon;
+}
+
+/* body {
+  background-image: url("images/background_2.jpg");
+  background-repeat: repeat-x;
+} */
+
+.flag {
+  display: grid;
+  grid-template-areas: "flag about_flag";
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+#flag {
+  width: 400px;
+  display: block;
+  /* margin-left: auto;
+  margin-right: auto; */
+  padding-top: 50px;
+  grid-area: flag;
+}
+
+#about_flag {
+  grid-area: about_flag;
+  width: 400px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 15pt;
+  color: red;
+  font-style: italic;
+}
+
+#about {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.intro {
+  display: grid;
+  grid-template-areas:
+    "intro_1 image-1"
+    "intro_2 image-2"
+    "intro_3 image-3";
+  margin-left: auto;
+  margin-right: auto;
+  grid-row-gap: 10px;
+}
+
+#intro_1 {
+  grid-area: intro_1;
+  width: 600px;
+  text-indent: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#intro_2 {
+  grid-area: intro_2;
+  width: 600px;
+  text-indent: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#intro_3 {
+  grid-area: intro_3;
+  width: 600px;
+  text-indent: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#intro_images_1 {
+  grid-area: image-1;
+  width: 300px;
+}
+
+#intro_images_2 {
+  grid-area: image-2;
+  width: 300px;
+}
+
+#intro_images_3 {
+  grid-area: image-3;
+  width: 300px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 80pt;
+  color: maroon;
+  font-family: "Caveat", cursive;
+}
+
+h3 {
+  text-align: center;
+  font-size: 25pt;
+  font-family: "Cuprum", sans-serif;
+  color: maroon;
+}
+
+h4 {
+  font-family: "Cuprum", sans-serif;
+  font-size: 18pt;
+}
+
+.images {
+  width: 300px;
+}
+
+.images_2 {
+  width: 300px;
+  height: 250px;
+}
+
+
+.ben_youssef_images {
+  display: grid;
+  grid-template-areas:
+  "image-1 image-2 image-3";
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#ben-youssef-1{
+  grid-area: image-1;
+}
+
+#ben-youssef-2{
+  grid-area: image-2;
+}
+
+#ben-youssef-3{
+  grid-area: image-3;
+}
+
+.al-attarine-madrasa{
+  display: grid;
+  grid-template-areas: "madrasa-info madrasa-images"
+}
+
+.madrasa-info{
+  grid-area: madrasa-info;
+  width: 500px;
+}
+
+.madrasa-images{
+  grid-area: madrasa-images;
+  width: 400px;
+}
+
+#madrasa-1{
+  width: 400px;
+  border-radius: 50%;
+}
+
+#madrasa-2{
+  width: 400px;
+  border-radius: 50%;
+}
+
+#map {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  grid-area: map;
+}
+
+
+.destinations {
+  grid-area: destinations;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 16pt;
+}
+
+.popular_destinations {
+  display: grid;
+  grid-template-areas: "map destinations";
+}
+
+.marrakesh-intro {
+  display: grid;
+  grid-template-areas: "info image";
+}
+
+#fez {
+  padding-top: 30px;
+}
+
+.fez-intro{
+  display: grid;
+  grid-template-areas: "image intro";
+}
+
+#about-fes{
+  grid-area: intro;
+  width: 500px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 22px;
+  color: teal;
+  font-style: italic;
+  line-height: 25px;
+}
+
+#fes-image{
+  grid-area: image;
+  width: 500px;
+}
+
+#marrakesh-intro {
+  grid-area: info;
+  width: 500px;
+  line-height: 25px;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+  font-size: 22px;
+  color: orange;
+  font-style: italic;
+}
+
+#marrakesh-image {
+  grid-area: image;
+  width: 500px;
+}
+
+.market_images {
+  display: inline;
+}
+
+.marakesh-market {
+  display: grid;
+  margin: 0 auto;
+  grid-template-areas:
+    "market-1 market-2 market-3"
+    "market-4 market-5 market-6";
+  grid-column-gap: 5pt;
+  grid-gap: 20pt;
+  width: 100%;
+  padding-top: 20px;
+}
+
+#market-1 {
+  grid-area: market-1;
+}
+
+#market-2 {
+  grid-area: market-2;
+}
+
+#market-3 {
+  grid-area: market-3;
+}
+
+#market-4 {
+  grid-area: market-4;
+}
+
+#market-5 {
+  grid-area: market-5;
+}
+
+#market-6 {
+  grid-area: market-6;
+}
+
+#about_souks {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: maroon;
+  color: white;
+  font-size: 10pt;
+}
+
+#about_souks_info {
+  padding-top: 20px;
+}
+
+dt {
+  font-style: italic;
+  font-size: 15pt;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.souks{
+  padding-top: 20px;
+}
+
+#tips{
+  font-family: "Cuprum", sans-serif;
+  color: purple;
+  font-size: 20pt;
+  text-align: center;
+}
+
+footer{
+  font-size: 12pt;
+}
