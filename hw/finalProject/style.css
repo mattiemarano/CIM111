@@ -1,0 +1,126 @@
+html,
+body {
+  font-family: "Abel", sans-serif;
+  margin: 3%;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  font-size: 60pt;
+  color: #005073;
+  padding-bottom: 0;
+}
+
+nav {
+  text-align: center;
+  font-weight: bold;
+  font-size: 12pt;
+}
+
+nav li {
+  display: inline;
+  padding-right: 40pt;
+}
+
+a {
+  text-decoration: none;
+  color: #107dac;
+}
+a:hover {
+  color: #71c7ec;
+}
+
+#quote {
+  text-align: center;
+  font-size: 20pt;
+  color: #005073;
+  font-style: oblique;
+}
+
+.photos {
+  width: 400px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.introduction-grid {
+  display: grid;
+  grid-template-areas:
+    "costa-rica morocco"
+    "italy spain";
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.headings {
+  text-align: center;
+}
+
+.costa-rica {
+  grid-area: costa-rica;
+}
+
+.morocco {
+  grid-area: morocco;
+}
+
+.italy {
+  grid-area: italy;
+}
+
+.spain {
+  grid-area: spain;
+}
+
+.slideshow1
+  .slidesContainer1
+  .slideshow2
+  .slidesContainer2
+  .slideshow3
+  .slidesContainer3
+  .slideshow4
+  .slidesContainer4 {
+  margin: 0 auto;
+  width: 560px;
+  height: 263px;
+  overflow: auto; /* allow scrollbar */
+  position: relative;
+}
+
+.slideshow1
+  .slidesContainer1
+  .slideshow2
+  .slidesContainer2
+  .slideshow3
+  .slidesContainer3
+  .slideshow4
+  .slidesContainer4
+  .slides1
+  .slides2
+  .slides3
+  .slides4 {
+  margin: 0 auto;
+  width: 540px; /* reduce by 20 pixels to avoid horizontal scroll */
+  height: 263px;
+}
+
+/* .control {
+  display: block;
+  width: 39px;
+  height: 263px;
+  text-indent: -10000px;
+  position: absolute;
+  cursor: pointer;
+}
+#leftControl {
+  top: 0;
+  left: 0;
+  background: transparent url(img/control_left.jpg) no-repeat 0 0;
+}
+#rightControl {
+  top: 0;
+  right: 0;
+  background: transparent url(img/control_right.jpg) no-repeat 0 0;
+} */
