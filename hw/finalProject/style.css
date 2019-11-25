@@ -1,3 +1,4 @@
+/* GENERAL */
 html,
 body {
   font-family: "Abel", sans-serif;
@@ -39,12 +40,17 @@ a:hover {
 }
 
 .photos {
-  width: 400px;
-  height: 300px;
+  width: 500px;
+  height: 350px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.headings {
+  text-align: center;
+}
+
+/* HOME PAGE*/
 .introduction-grid {
   display: grid;
   grid-template-areas:
@@ -52,10 +58,6 @@ a:hover {
     "italy spain";
   margin-left: auto;
   margin-right: auto;
-}
-
-.headings {
-  text-align: center;
 }
 
 .costa-rica {
@@ -74,53 +76,65 @@ a:hover {
   grid-area: spain;
 }
 
-.slideshow1
-  .slidesContainer1
-  .slideshow2
-  .slidesContainer2
-  .slideshow3
-  .slidesContainer3
-  .slideshow4
-  .slidesContainer4 {
-  margin: 0 auto;
-  width: 560px;
-  height: 263px;
-  overflow: auto; /* allow scrollbar */
+/* SLIDESHOW CONTAINER */
+.slideshow-container {
+  max-width: 600px;
+  max-height: 600px;
   position: relative;
+  margin: auto;
+  padding-top: 50px;
 }
 
-.slideshow1
-  .slidesContainer1
-  .slideshow2
-  .slidesContainer2
-  .slideshow3
-  .slidesContainer3
-  .slideshow4
-  .slidesContainer4
-  .slides1
-  .slides2
-  .slides3
-  .slides4 {
-  margin: 0 auto;
-  width: 540px; /* reduce by 20 pixels to avoid horizontal scroll */
-  height: 263px;
+/* Hide the images by default */
+.mySlides {
+  display: none;
 }
 
-/* .control {
-  display: block;
-  width: 39px;
-  height: 263px;
-  text-indent: -10000px;
-  position: absolute;
+/* Next & previous buttons */
+.prev,
+.next {
   cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
-#leftControl {
-  top: 0;
-  left: 0;
-  background: transparent url(img/control_left.jpg) no-repeat 0 0;
-}
-#rightControl {
-  top: 0;
+
+/* Position the "next button" to the right */
+.next {
   right: 0;
-  background: transparent url(img/control_right.jpg) no-repeat 0 0;
-} */
+  border-radius: 3px 0 0 3px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}

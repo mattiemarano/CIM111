@@ -20,6 +20,10 @@
    <meta charset="utf-8">
    <title>Italy 2017</title>
 
+   <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet"> <!-- body font -->
+   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -27,6 +31,96 @@
       <h1>Italy</h1>
    </header>
 
+   <nav>
+      <a href="index.html">Home</a>
+      <a href="costaRica.html">Costa Rica 2015</a>
+      <a href="morocco.html">Morocco 2016</a>
+      <a href="italy.html">Italy 2017</a>
+      <a href="spain.html">Spain 2018</a>
+   </nav>
+
+   <!-- Slideshow container -->
+   <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides">
+         <div class="numbertext">1 / 5</div>
+         <img src="photos/italy/burano_3.jpg" alt="burano" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+         <div class="numbertext">2 / 5</div>
+         <img src="photos/italy/capri_6.jpg" alt="capri" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+         <div class="numbertext">3 / 5</div>
+         <img src="photos/italy/vatican_1.jpg" alt="vatican city" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+         <div class="numbertext">4 / 5</div>
+         <img src="photos/italy/rome_7.jpg" alt="rome" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+         <div class="numbertext">5 / 5</div>
+         <img src="photos/italy/florence_2.jpg" alt="florence" style="width:100%">
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+   </div>
+
+   <!-- The dots/circles -->
+   <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+   </div>
+
+   <p>This will be a short summary pargraph about my trip to Italy.</p>
+   </section>
+   <!--end of italy-->
+
 </body>
+<script>
+   var slideIndex = 1;
+   showSlides(slideIndex);
+
+   // Next/previous controls
+   function plusSlides(n) {
+      showSlides(slideIndex += n);
+   }
+
+   // Thumbnail image controls
+   function currentSlide(n) {
+      showSlides(slideIndex = n);
+   }
+
+   function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+         slideIndex = 1
+      }
+      if (n < 1) {
+         slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+         dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+   }
+
+</script>
 
 </html>
