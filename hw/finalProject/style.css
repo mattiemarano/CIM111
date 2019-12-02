@@ -3,6 +3,8 @@ html,
 body {
   font-family: "Abel", sans-serif;
   margin: 3%;
+  font-size: 14pt;
+  background-color: #f8f8fa;
 }
 
 h1 {
@@ -28,8 +30,14 @@ a {
   text-decoration: none;
   color: #107dac;
 }
+
 a:hover {
   color: #71c7ec;
+}
+
+nav a {
+  display: inline;
+  padding-right: 30px;
 }
 
 #quote {
@@ -37,17 +45,26 @@ a:hover {
   font-size: 20pt;
   color: #005073;
   font-style: oblique;
+  padding-top: 25px;
+  padding-bottom: 20px;
 }
 
-.photos {
+.home-photos {
   width: 500px;
   height: 350px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .headings {
   text-align: center;
+  color: #107dac;
+}
+
+p {
+  text-indent: 25px;
 }
 
 /* HOME PAGE*/
@@ -56,8 +73,11 @@ a:hover {
   grid-template-areas:
     "costa-rica morocco"
     "italy spain";
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: auto;
+  margin-bottom: auto;
+  grid-template-columns: 50% 50%;
 }
 
 .costa-rica {
@@ -74,6 +94,12 @@ a:hover {
 
 .spain {
   grid-area: spain;
+}
+
+.country-intro {
+  font-size: 12pt;
+  max-width: 490px;
+  text-indent: 25px;
 }
 
 /* SLIDESHOW CONTAINER */
@@ -132,6 +158,11 @@ a:hover {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  text-align: center;
+}
+
+.dot-indicators {
+  text-align: center;
 }
 
 .active,
