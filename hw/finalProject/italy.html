@@ -19,74 +19,236 @@
 
    <meta charset="utf-8">
    <title>Italy 2017</title>
+   <meta name="author" content="Mattie Marano">
+   <meta name="description" content="This is a website about Italy">
+   <meta name="viewport" content="width=device-width">
 
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="css/mobile.css">
    <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet"> <!-- body font -->
    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-   <header>
-      <h1>Italy</h1>
-   </header>
+   <main>
+      <header>
+         <h1>Italy</h1>
+      </header>
 
-   <nav>
-      <a href="index.html">Home</a>
-      <a href="costaRica.html">Costa Rica 2015</a>
-      <a href="morocco.html">Morocco 2016</a>
-      <a href="italy.html">Italy 2017</a>
-      <a href="spain.html">Spain 2018</a>
-   </nav>
+      <nav>
+         <a href="index.html">Home</a>
+         <a href="costaRica.html">Costa Rica 2015</a>
+         <a href="morocco.html">Morocco 2016</a>
+         <a href="italy.html">Italy 2017</a>
+         <a href="spain.html">Spain 2018</a>
+      </nav>
 
-   <!-- Slideshow container -->
-   <div class="slideshow-container">
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
 
-      <!-- Full-width images with number and caption text -->
-      <div class="mySlides">
-         <div class="numbertext">1 / 5</div>
-         <img src="photos/italy/burano_3.jpg" alt="burano" style="width:100%">
+         <!-- Full-width images with number and caption text -->
+         <div class="mySlides">
+            <div class="numbertext">1 / 5</div>
+            <img src="photos/italy/burano_3.jpg" alt="burano" style="width:100%">
+         </div>
+
+         <div class="mySlides">
+            <div class="numbertext">2 / 5</div>
+            <img src="photos/italy/capri_6.jpg" alt="capri" style="width:100%">
+         </div>
+
+         <div class="mySlides">
+            <div class="numbertext">3 / 5</div>
+            <img src="photos/italy/vatican_1.jpg" alt="vatican city" style="width:100%">
+         </div>
+
+         <div class="mySlides">
+            <div class="numbertext">4 / 5</div>
+            <img src="photos/italy/rome_7.jpg" alt="rome" style="width:100%">
+         </div>
+
+         <div class="mySlides">
+            <div class="numbertext">5 / 5</div>
+            <img src="photos/italy/florence_2.jpg" alt="florence" style="width:100%">
+         </div>
+
+         <!-- Next and previous buttons -->
+         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
 
-      <div class="mySlides">
-         <div class="numbertext">2 / 5</div>
-         <img src="photos/italy/capri_6.jpg" alt="capri" style="width:100%">
-      </div>
+      <!-- The dots/circles -->
+      <div class="dot-indicators">
+         <span class="dot" onclick="currentSlide(1)"></span>
+         <span class="dot" onclick="currentSlide(2)"></span>
+         <span class="dot" onclick="currentSlide(3)"></span>
+         <span class="dot" onclick="currentSlide(4)"></span>
+         <span class="dot" onclick="currentSlide(5)"></span>
+      </div> <!-- end of slideshow -->
 
-      <div class="mySlides">
-         <div class="numbertext">3 / 5</div>
-         <img src="photos/italy/vatican_1.jpg" alt="vatican city" style="width:100%">
-      </div>
 
-      <div class="mySlides">
-         <div class="numbertext">4 / 5</div>
-         <img src="photos/italy/rome_7.jpg" alt="rome" style="width:100%">
-      </div>
 
-      <div class="mySlides">
-         <div class="numbertext">5 / 5</div>
-         <img src="photos/italy/florence_2.jpg" alt="florence" style="width:100%">
-      </div>
 
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-   </div>
+      <h2>Places I Visited</h2>
+      <section class="places-visited-italy">
+         <p class="places place1">Rome</p>
+         <p class="places place2">Florence</p>
+         <p class="places place3">Venice</p>
+         <p class="places place4">Pisa</p>
+         <p class="places place5">Assisi</p>
+         <p class="places place6">Capri</p>
+         <p class="places place7">Pompeii</p>
+         <p class="places place8">Sorrento</p>
+         <p class="places place9">Tuscany</p>
+         <p class="places place10">Perugia</p>
+         <p class="places place11">Siena</p>
+         <p class="places place12">Naples</p>
+         <p class="places place13">Magisano</p>
+         <p class="places place14">Calabria</p>
 
-   <!-- The dots/circles -->
-   <div class="dot-indicators">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
-      <span class="dot" onclick="currentSlide(5)"></span>
-   </div>
+         <img class="places-photos placephoto1" src="photos/italy/rome_10.jpg" alt="">
+         <img class="places-photos placephoto2" src="photos/italy/florence_3.jpg" alt="">
+         <img class="places-photos placephoto3" src="photos/italy/venice_7.jpg" alt="">
+         <img class="places-photos placephoto4" src="photos/italy/pisa_3.jpg" alt="">
+         <img class="places-photos placephoto5" src="photos/italy/assisi_3.jpg" alt="">
+         <img class="places-photos placephoto6" src="photos/italy/capri_6.jpg" alt="">
+         <img class="places-photos placephoto7" src="photos/italy/pompeii_3.jpg" alt="">
+         <img class="places-photos placephoto8" src="photos/italy/sorrento_7.jpg" alt="">
+         <img class="places-photos placephoto9" src="photos/italy/tuscany_2.jpg" alt="">
+         <img class="places-photos placephoto10" src="photos/italy/perugia.jpg" alt="">
+         <img class="places-photos placephoto11" src="photos/italy/siena.jpg" alt="">
+         <img class="places-photos placephoto12" src="photos/italy/naples.jpg" alt="">
+         <img class="places-photos placephoto13" src="photos/italy/magisano.jpg" alt="">
+         <img class="places-photos placephoto14" src="photos/italy/calabria_2.jpg" alt="">
 
-   <p>This will be a short summary pargraph about my trip to Italy.</p>
-   </section>
-   <!--end of italy-->
+      </section>
+
+
+      <h2>Food I Ate</h2>
+      <section class="food-italy">
+         <p class="food1">Pizza</p>
+         <p class="food2">Cappuccino</p>
+         <p class="food3">Pasta</p>
+         <p class="food4">Gelato</p>
+         <p class="food5">Beef Carpaccio</p>
+         <p class="food6">Spritz</p>
+         <p class="food7">Brioche con Gelato</p>
+         <p class="food8">Cured Meats</p>
+         <p class="food9">Cheese</p>
+         <p class="food10">Wine</p>
+         <p class="food11">Cream Puff</p>
+         <p class="food12">Sandwiches</p>
+
+
+         <img class="food-photos foodphoto1" src="photos/italy/calabria_1.jpg" alt="">
+         <img class="food-photos foodphoto2" src="photos/italy/capuccino.jpg" alt="">
+         <img class="food-photos foodphoto3" src="photos/italy/capri_10.jpg" alt="">
+         <img class="food-photos foodphoto4" src="photos/italy/florence_4.jpg" alt="">
+         <img class="food-photos foodphoto5" src="photos/italy/capri_9.jpg" alt="">
+         <img class="food-photos foodphoto6" src="photos/italy/venice_6.jpg" alt="">
+         <img class="food-photos foodphoto7" src="photos/italy/calabria_4.jpg" alt="">
+         <img class="food-photos foodphoto8" src="photos/italy/rome_8.jpg" alt="">
+         <img class="food-photos foodphoto9" src="photos/italy/sorrento_6.jpg" alt="">
+         <img class="food-photos foodphoto10" src="photos/italy/tuscany_3.jpg" alt="">
+         <img class="food-photos foodphoto11" src="photos/italy/creampuff.jpg" alt="">
+         <img class="food-photos foodphoto12" src="photos/italy/sandwich.jpg" alt="">
+      </section>
+
+      <h2>My Favorite Memories</h2>
+      <section class="moments-italy">
+
+         <img class="moments-photos photo1" id="icebar" src="photos/italy/rome_9.jpg" alt="">
+         <section class="memory1">
+            <p class="memory-title">Ice Bar</p>
+            <p>Marcella and I decided to go on to Italy after graduation on our own, instead of with our schools Euro trip since it would be a bunch of people that we weren't necessarily friends with. The Euro trip happened to be in Rome a few days before we
+               were there, so we were able to see all the places that they went to as inspiration for what we wanted to do ourselves. On our first or second night in Rome, we were going on a dinner with our whole tour group, but Marcella and I saw that people
+               from school went to the ice bar and we were dead set on going ourselves. So, after dinner ended, but awkwardly separated from the pack, venturing into rome on our own. Our tour guide had never heard of the ice bar, but gave us directions on
+               which way to get there, and we took screen shots of how we shoudl go since we had limited data. Roaming the streets, in the dark, proved to be more difficult than we expected. The directions had us walking through tunnels with cars rushing by,
+               and thorugh dark alley ways, but somehow we eventually ended up at the door of the bar. Never being to a bar before, we were nervous when we first got there, but they gave us our coats and mittens and we went inside. The whole bar is actually
+               made of ice, even the cups. When we got to the bar we discovered that there was a deal; shots for 1 euro, except it was the bartenders choice. Our first bartender was nice, giving us good tasting shots, but the next one decided to mess with us,
+               giving us the worst we could, making us guess what it was. As we were having fun just messing around and taking pictures, we met two girls from Hawaii. We ended up talking for the rest of the night, and walked home together. It was like we had
+               known eachother for years, even though we really only knew them for a few hours. </p>
+         </section>
+
+
+         <img class="moments-photos photo2" src="photos/italy/tuscany_4.jpg" alt="">
+         <section class="memory2">
+            <p class="memory-title">Vineyard Vibes</p>
+            <p>One night when we were in Tuscany, our whole group went to a vineyard for a tour and dinner. This vineyard is exactly what you would imagine when you hear "Tuscan Vineyard." Everything was gorgous and it was such a quaint place. After we got
+               our inital tour we had dinner, which was a multicourse meal, all of it amazing. But, the best part of the night is when we did the wine tasting. We were given bottles of different wines, all of which were meant to be drank with a specific meal
+               we were having. However, as 18 year olds with immature palets, some of the tastes were a little strong for us. We did, however, find one that we liked, and decided to drink that one all night. As dinner was coming to an end, and everyone had had
+               their fair share of wine, we all gathered outside where was a DJ playing music, basically begging everyone to dance. We had been on our trip for a good few days at this point, so everyone was beginning to get comfortable with one another, and
+               this allowed us to dance the night away. People that never would have known eachother before were dancing with one another, not caring who could see or what they looked like. We were all laughing and smiling all night, just enjoying the
+               wonderful scenery. The next day, we could tell that people were feeling the effects of the night before, but it was all worth it.</p>
+         </section>
+
+
+         <img class="moments-photos photo3" id="drinks" src="photos/italy/florence_5.jpg" alt="">
+         <section class="memory3">
+            <p class="memory-title">Finicular Friends</p>
+            <p>On our trip there were about 25 people, with the ages ranging from about 10 to the upper 70s. When we first started the trip, Marcella, Maria(Mrs. Parisi), and I did not really plan on making friends with any of the people we
+               were on the rip with since we were kind of doing our own thing, or at least that is what we thought. As the days went by, we started becoming friendly with a few of the families on the trip, all of them with kids around our age. At first we
+               would
+               all just sit together at meals, sharing stories, but eventually we started making plans with one another, outside of the preplanned activities of our trip. One night while we were still in Tuscany in Montecatini Alto, our tour guide, Patricia,
+               told us about a Finicular, which is like a tram that goes from the base of the town up to the top of the mountain where there a little shops and restaurants. So, that night the three of us, plus three of the families we had became friends with,
+               decided to all go up together. Despite only meeting eachother a week prior, we all took photos together and spent the night together. After looking around, we found a bar where we all got drinks and hung out on the patio. As it was time to
+               leave,
+               and we were walking back to the finicular, one of the parents decided to trick us into believing that we were dining and dashing, skipping out on the bill. We all believed him, and were considering going back, but then they let us in on the
+               trick, confessing they paid for all the drinks for us. I was shocked that Melissa would offer to pay for us all, especially since we had all just met, but it showed how close we all became.</p>
+         </section>
+
+         <img class="moments-photos photo4" id="capri" src="photos/italy/capri_1.jpg" alt="">
+         <section class="memory4">
+            <p class="memory-title">Wild Night Out (for Maria)</p>
+            <p>When we were out in Capri, Marcella and I were on a mission to go out. Little did we know how exclusive and fancy everything was in Capri. As we were trying to do research on where to go, we were running into some issues, but we found one
+               place
+               and decided to walk over. When we got there it didn't look there was anything really there, not even a restaurant, so we decided to just walk around Capri wiht Gio and Aly, two of the people we met on the trip. We ended up just sitting in the
+               lobby of our hotel and talking that night, going to bed pretty early. However, we forgot to tell Maria that our plans had changed, so she was still under the impression that we were out clubbing well into the night. Around 3 or 4 am, Marcella
+               and
+               I were awoken by loud pounding and an angry voice outside the door. Confused, we got up and checked to see what was going on, only to find Maria outside. What had happened was that she was trying to call us on our phones but wasn't getting
+               through since they were on vibrate and we were sleeping. And, when she tried to call our room she wasn't able to get in because I had accidentally unplugged the phone to charge my phone. Unable to get through to us, Maria ventured out into the
+               night, going to all of the clubs and bar looking for us, all while we were in bed sleeping. So, all of the bars that we had wanted to go to simply weren't open yet when we were ready to go out, but Maria had no trouble going and partying all
+               night. In the moment she was pretty mad at us, but the next day we were all able to laugh about it since we realized Maria had gone out more than we had.</p>
+         </section>
+
+         <img class="moments-photos photo5" id="cheese" src="photos/italy/sorrento_2.jpg" alt="">
+         <section class="memory5">
+            <p class="memory-title">Say Cheese!</p>
+            <p>When we were in Sorrento, one of the optional activities was to go to an old olive mill on the country side. After touring the lemon, orange, and olive groves, we were treated to a homemade lunch from our hosts. At first, we were all sat in
+               front of a stand where an old Italian Grandman, Maria, taught us all how to make mozzeralla, an essential skill in my opinion. Maria actually only knew one word, which is appropriatley "cheese," but she was just so happy to be there, showing us
+               what she has been doing for her whole life. After we learned how to make the cheese, some people were asked to go up and make pizza, which was our lunch. While the pizzas were cooking we were able to snack on meat and cheese, marinated
+               vegetables, wine, bread, and later the pizza. This food was some of the best we had on the whole trip, and teh crazy thing is how simple it all was. There were no extra frills, just good food. Since we were on the lemon orchard, they also had
+               limoncello for us to all have after lunch. Well before the trip Marcella and I had been saying how excited we were to have limoncello, and how it was going to be amazing. However, when we tasted it, we were unfortuantley dissapointed. What we
+               though was going to be sweet and sugary was actually tart and far too strong. Since we had talked a big game though, we were convinced to gulp it down. Lesson learned I guess.</p>
+         </section>
+
+         <img class="moments-photos photo6" src="photos/italy/capri_8.jpg" alt="">
+         <section class="memory6">
+            <p class="memory-title">Fantasia de Capri</p>
+            <p>All the food in Italy was amazing, no surprise there, but we were really treated to some good food in Capri. There was one little shop on the street that we discovered, R. Buonocore, where found some of the best gelato. I'm not usually a cone
+               person, but I couldn't resist this time becasue we could see them making fresh cones to order. There was one flavor there, Fantasia de Capri, which was recommended to us and I am so glad that I got it. It was abosoltuley amazing, I still wish I
+               remembered what was in it. After trying it one night, we decided we needed to go the next day. Later that same night, we found one of the people on our trip, Shelly, and we were telling her about the Geloto that we had fallen in love with. We
+               finally convinced her that she had to try it, and in the moment we decided that we couldn't pass up an opporutnity to treat ourselves to another. Even after having the Fantasia de Capri earlier in the day, I needed to have it again just because
+               how good it was. The night that we discovered the Gelatp, we also had an amazing dinner, looking out on the water of Capri. We were told that this restaurant was one of the best on the island, so we decided we wanted to go there. When we tried
+               to
+               make reservations online, we were unable, so we decided to walk over super early to try and snag a table. When we got there the host told us that there were no tables since they had reservations all night, but at that point the restaurant was
+               empty. We somehow convinced him to give us a table, after promising we would leave within an hour and half. I'm so thankful that we went through the trouble and fought for the table becasue the meal was amazing. That night I had pasta with
+               clams,
+               and carpaccio, and everything tasted amazing. After those few days, I was convinced that I had to go back to Capri just to eat again.</p>
+
+         </section>
+
+   </main>
+
+   <footer>
+      <p>Wanderlust, by Mattie Marano</p>
+   </footer>
 
 </body>
+
+
 <script>
    var slideIndex = 1;
    showSlides(slideIndex);

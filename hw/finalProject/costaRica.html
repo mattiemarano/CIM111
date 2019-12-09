@@ -17,71 +17,199 @@
    </script>
    <meta charset="utf-8">
    <title>Costa Rica 2015</title>
+   <meta name="author" content="Mattie Marano">
+   <meta name="description" content="This is a website about Italy">
+   <meta name="viewport" content="width=device-width">
 
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="css/mobile.css">
    <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet"> <!-- body font -->
    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 
 <body>
-   <header>
-      <h1>Costa Rica</h1>
-   </header>
+   <main>
 
-   <nav>
-      <a href="index.html">Home</a>
-      <a href="costaRica.html">Costa Rica 2015</a>
-      <a href="morocco.html">Morocco 2016</a>
-      <a href="italy.html">Italy 2017</a>
-      <a href="spain.html">Spain 2018</a>
-   </nav>
+      <header>
+         <h1>Costa Rica</h1>
+      </header>
 
-   <!-- Slideshow container -->
-   <div class="slideshow-container">
+      <nav>
+         <a href="index.html">Home</a>
+         <a href="costaRica.html">Costa Rica 2015</a>
+         <a href="morocco.html">Morocco 2016</a>
+         <a href="italy.html">Italy 2017</a>
+         <a href="spain.html">Spain 2018</a>
+      </nav>
 
-      <!-- Full-width images with number and caption text -->
-      <div class="mySlides">
-         <div class="numbertext">1 / 5</div>
-         <img src="photos/costaRica/house.jpg" alt="house" style="width:100%">
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+         <!-- Full-width images with number and caption text -->
+         <div class="mySlides">
+            <div class="numbertext">1 / 5</div>
+            <img src="photos/costaRica/house.jpg" alt="house" style="width:100%">
+         </div>
+
+         <div class="mySlides">
+            <div class="numbertext">2 / 5</div>
+            <img src="photos/costaRica/beach.jpg" alt="beach" style="width:100%">
+         </div>
+
+         <div class="mySlides">
+            <div class="numbertext">3 / 5</div>
+            <img src="photos/costaRica/picture_1.jpg" alt="friends" style="width:100%">
+         </div>
+
+         <div class="mySlides">
+            <div class="numbertext">4 / 5</div>
+            <img src="photos/costaRica/camp_3.jpg" alt="camp" style="width:100%">
+         </div>
+
+         <div class="mySlides">
+            <div class="numbertext">5 / 5</div>
+            <img src="photos/costaRica/wwr_6.jpg" alt="white water rafting" style="width:100%">
+         </div>
+
+         <!-- Next and previous buttons -->
+         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
+      <br>
 
-      <div class="mySlides">
-         <div class="numbertext">2 / 5</div>
-         <img src="photos/costaRica/beach.jpg" alt="beach" style="width:100%">
+      <!-- The dots/circles -->
+      <div class="dot-indicators">
+         <span class="dot" onclick="currentSlide(1)"></span>
+         <span class="dot" onclick="currentSlide(2)"></span>
+         <span class="dot" onclick="currentSlide(3)"></span>
+         <span class="dot" onclick="currentSlide(4)"></span>
+         <span class="dot" onclick="currentSlide(5)"></span>
       </div>
+      <!--end of slideshow -->
 
-      <div class="mySlides">
-         <div class="numbertext">3 / 5</div>
-         <img src="photos/costaRica/picture_1.jpg" alt="friends" style="width:100%">
-      </div>
+      <h2>Places I Visited</h2>
 
-      <div class="mySlides">
-         <div class="numbertext">4 / 5</div>
-         <img src="photos/costaRica/camp_3.jpg" alt="camp" style="width:100%">
-      </div>
+      <section class="places-visited-costarica">
 
-      <div class="mySlides">
-         <div class="numbertext">5 / 5</div>
-         <img src="photos/costaRica/wwr_6.jpg" alt="white water rafting" style="width:100%">
-      </div>
+         <p class="places place1">Pacuare River</p>
+         <p class="places place2">Sarapiqui</p>
+         <p class="places place3">Arenal</p>
+         <p class="places place4">La Fortuna</p>
+         <p class="places place5">Isla Tortuga</p>
 
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-   </div>
-   <br>
 
-   <!-- The dots/circles -->
-   <div class="dot-indicators">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
-      <span class="dot" onclick="currentSlide(5)"></span>
-   </div>
-   </section>
+         <img class="places-photos placephoto1" src="photos/costaRica/wwr_6.jpg" alt="pacauare river">
+         <img class="places-photos placephoto2" src="photos/costaRica/sarapiqui.jpg" alt="">
+         <img class="places-photos placephoto3" src="photos/costaRica/house.jpg" alt="">
+         <img class="places-photos placephoto4" src="photos/costaRica/river.jpg" alt="">
+         <img class="places-photos placephoto5" src="photos/costaRica/beach.jpg" alt="">
+      </section>
 
-   </header>
+      <h2>Food I Ate</h2>
+
+      <section class="food-costarica">
+
+         <p class="food1">Trits</p>
+         <p class="food2">Fruits</p>
+         <p class="food3">Juegos Frutas</p>
+         <p class="food4">Rice and Beans</p>
+         <p class="food5">Yipy Cookies</p>
+         <p class="food6">Ckiky Cookies</p>
+
+
+         <img class="food-photos foodphoto1" src="photos/costaRica/trits.jpg" alt="icecream">
+         <img class="food-photos foodphoto2" src="photos/costaRica/wwr_4.jpg" alt="fruits">
+         <img class="food-photos foodphoto3" src="photos/costaRica/juice.jpg" alt="">
+         <img class="food-photos foodphoto4" src="photos/costaRica/rice.jpg" alt="">
+         <img class="food-photos foodphoto5" src="photos/costaRica/yipy.jpg" alt="">
+         <img class="food-photos foodphoto6" src="photos/costaRica/chiky.jpg" alt="">
+
+      </section>
+
+      <h2>My Favorite Memories</h2>
+
+      <section class="moments-costarica">
+
+         <img class="moments-photos photo1" src="photos/costaRica/wwr_5.jpg" alt="white water rafting">
+
+         <section class="memory1">
+            <p class="memory-title">White Water Rafting on the Pacuare River </p>
+            <p>After arriving in Costa Rica, one of the first things we did as a group was go on a white water rafting trip on the Pacuare River. I had never done anything like this before, and I was honestly nervous about it, especially since
+               none of us
+               really
+               knew eachother yet. There wasn't too much time to think about it though because we quickly learned how to steer and manuever the raft and then we were out on the river. My nerves were quickly replaced with adrenaline, the journey down the river
+               exhilarating me. After a few hours on the river we docked our rafts at an ecolodge and it was one of the nicest places I had ever seen. Overall, those first two days of the trip got me even more excited for the trip ahead of me.</p>
+         </section>
+
+         <img class="moments-photos photo2" src="photos/costaRica/camp_5.jpg" alt="camp">
+
+         <section class="memory2">
+            <p class="memory-title">Summer Camp Leadership</p>
+            <p>The name of the trip that I was on was "Summer Camp Leadership in Costa Rica," and as the name entails the main purpose for our time in Costa Rica was to plan and hold a week of camp for around 20 local Costa Rican children. Camp
+               is not a very
+               common occurence in Costa Rica, so the experience we provided these children could not be replicated anywhere else. Growing up I had always attended different camps, and those expereine are some of my most fond memories. As a group, we were all
+               very excited to plan the camp, but we were left disappointed after the first day becasue everything we planned did not go according to plan. After a tough first day, we became even more committed to redesigning the structure of camp as to make
+               it
+               a success. At this point we all came together and were able to put on a fun camp experience that the campers truly enjoyed.</p>
+         </section>
+
+         <img class="moments-photos photo3" src="photos/costaRica/zipling_3.jpg" alt="ziplingig">
+         <section class="memory3">
+            <p class="memory-title">High in the Sky</p>
+            <p>After camp one day we had the option to go on one of two activities outside of camp, and one of those options was zipling. Never having gone zipling, I decided to take a chance and go. Like when white water rafting, I was nervous
+               at first since
+               it was an experience like I had never had before. After getting strapped into our harnesses and given a brief explanation on how to do it, we were all brought up to the first zip line. When it was my turn, and I was standing on the edge of the
+               platform my heart was pounding. All I could see in any direction were trees, and the ground was no where in sight. Despite the nerves I first had, when I finally stepped off the zip line and began flying towards the next platform, I couldn't
+               help
+               but smile and laugh. Again, the adrenaline pulsing through my body made me feel like I was invincible. To make the experience even better, one of the longest lines of the whole course went across open sky, well above other trees. When I was up
+               on
+               that line, I couldn't help but stare in awe at the beauty of the Arenal Volcano that I saw. </p>
+         </section>
+
+         <img class="moments-photos photo4" src="photos/costaRica/mud.jpg" alt="mud fight">
+         <section class="memory4">
+            <p class="memory-title">Messy Situation</p>
+            <p>During our time at camp, it became clar very quickly that soccer, or futbol, was one of the activities that all the campers wanted to do all day everyday. We would be playing other games, or trying to teach them English, and all
+               of them would
+               try and convince us to play soccer instead. Throughout the week we were able to steer their attention in other directions, but during one of the last days of camp, all of us come together and finally played futbol. At this time is was early
+               July,
+               making it rainy season in Costa Rica. This left the field we were playing on extremely muddy in some places. As the game went on, more and more people were slipping in the mud, and eventually the game of futbol digressed into everyone playing in
+               the mud. People were slidng through the mud, layin in it, rubbing it on themselves, and eventually it turned into a full on mud fight. In any other scenario, I probably would've thought that the idea of playing in the mud was gross, but on this
+               day it was the most fun I could've had. Everyone was laughing and smiling, even the people that were hesitant to the mud at first. </p>
+         </section>
+
+         <img class="moments-photos photo5" src="photos/costaRica/waterpark.jpg" alt="waterpark">
+         <section class="memory5">
+            <p class="memory-title">A New Friend</p>
+            <p>On the final day of camp, we took all of the campers to a local waterpark. This was another fun day of playing in the water and running around, but my favorite part of the day as not the actual experience of being at the
+               waterpark. Throughout
+               the week of camp each of us "councelors" began developing stronger relationships with certain campers and vice versa. One of the campers that I spent a lot time with throughout the week was Fernando. When we would do the english lessons, I would
+               sit with him and help. He was one of the older campers, and knew more English than the rest of them, allowing us to talk more and have actual conversations, both in English and Spanish. On the day of the water park we each paired off with a
+               camper, and Fernando was my partner for the day. As the day was coming to a close and we were all saying our final goodbyes to all the campers, Fernando came up to me and asked if we could take a picture together. That moment warmed my heart
+               since
+               it showed me that I had truly made an impact on his life, may it be small, and that all the hard work was worth it in the end.</p>
+         </section>
+
+         <img class="moments-photos photo6" src="photos/costaRica/tortuga.jpg" alt="beach">
+         <section class="memory6">
+            <p class="memory-title">That's soooo Rustic</p>
+            <p>Once all of our responsibilites with camp were over, and we had put in over 60 hours of community service, we were able to spend the last few days of the trip relaxing. When camp ended we left the jungle of Arenal and headed for
+               the beach. One
+               day we all hoped on to a catamaran which took us Isla Tortuga, a private island. I could've stayed on the boat all day, driving throughout the ocean, basking in the sun. But, the day got even better once we got onto the island. We first went
+               snorkeling, where we got to just swim around and see what we could find. Later, we went banana boating, where a tube in the shape of a banana is attached to a boat and we ride around through the waves. Instead of just going for the ride, the
+               girls
+               on my tube made a game out of seeing how many times they could fly off the tube all while making it look like an accident. For the rest of the day we all just hung out on the beach, spending time with one another. Overall, one of the parts I
+               enjoyed most about hte trip were the people that I met. By the end, it felt like I had known some of those girls for years instead of days. It was small moments like these, or running around our hotel looking for aloe plants to cure our crisp
+               sunburns that I will always remember and cherish.</p>
+         </section>
+      </section>
+
+   </main>
+   <footer>
+      <p>Wanderlust, by Mattie Marano</p>
+   </footer>
+
 </body>
 
 
