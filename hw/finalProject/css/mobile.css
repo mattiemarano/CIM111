@@ -30,6 +30,10 @@
     padding-right: 8px;
   }
 
+  footer {
+    font-size: 6pt;
+  }
+
   .quote {
     text-align: center;
     font-size: 13pt;
