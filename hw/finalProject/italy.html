@@ -157,6 +157,7 @@
       </section>
 
       <h2>My Favorite Memories</h2>
+
       <section class="moments-italy">
 
          <img class="moments-photos photo1" id="icebar" src="photos/Italy/rome_9.jpg" alt="">
@@ -237,8 +238,8 @@
                empty. We somehow convinced him to give us a table, after promising we would leave within an hour and half. I'm so thankful that we went through the trouble and fought for the table becasue the meal was amazing. That night I had pasta with
                clams,
                and carpaccio, and everything tasted amazing. After those few days, I was convinced that I had to go back to Capri just to eat again.</p>
-
          </section>
+      </section>
 
    </main>
 
@@ -246,43 +247,42 @@
       <p>Wanderlust, by Mattie Marano</p>
    </footer>
 
+   <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+         showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+         showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+         var i;
+         var slides = document.getElementsByClassName("mySlides");
+         var dots = document.getElementsByClassName("dot");
+         if (n > slides.length) {
+            slideIndex = 1
+         }
+         if (n < 1) {
+            slideIndex = slides.length
+         }
+         for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+         }
+         for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+         }
+         slides[slideIndex - 1].style.display = "block";
+         dots[slideIndex - 1].className += " active";
+      }
+
+   </script>
+
 </body>
-
-
-<script>
-   var slideIndex = 1;
-   showSlides(slideIndex);
-
-   // Next/previous controls
-   function plusSlides(n) {
-      showSlides(slideIndex += n);
-   }
-
-   // Thumbnail image controls
-   function currentSlide(n) {
-      showSlides(slideIndex = n);
-   }
-
-   function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {
-         slideIndex = 1
-      }
-      if (n < 1) {
-         slideIndex = slides.length
-      }
-      for (i = 0; i < slides.length; i++) {
-         slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-         dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-   }
-
-</script>
 
 </html>
