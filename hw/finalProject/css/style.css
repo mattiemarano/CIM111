@@ -6,7 +6,10 @@ body {
   font-size: 14pt;
   background-color: #f8f8fa;
   margin-bottom: 5%;
-  min-width: 100%;
+  /* min-width: 375px; */
+}
+.mobile-only {
+  display: none;
 }
 
 h1 {

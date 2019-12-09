@@ -2,6 +2,11 @@
   html {
     margin: 2%;
     font-size: 10pt;
+    width: 600px !important;
+  }
+
+  .mobile-only {
+    display: block;
   }
 
   h1 {
