@@ -5,6 +5,8 @@ body {
   margin: 3%;
   font-size: 14pt;
   background-color: #f8f8fa;
+  margin-bottom: 5%;
+  min-width: 100%;
 }
 
 h1 {
@@ -208,6 +210,7 @@ p {
 
 .places-visited-morocco {
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-areas:
     "placephoto1 place1 placephoto5 place5"
     "placephoto2 place2 placephoto6 place6"

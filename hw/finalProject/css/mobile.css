@@ -27,7 +27,7 @@
 
   nav a {
     display: inline;
-    padding-right: 8px;
+    padding-right: 7px;
   }
 
   footer {
@@ -71,7 +71,7 @@
   /*end of home page*/
 
   .slideshow-container {
-    width: 500px;
+    width: 100%;
     max-height: 500px;
     position: relative;
     margin-left: auto;
@@ -116,7 +116,7 @@
       "memory6"
       "photo6";
     grid-row-gap: 30px;
-    width: 600px;
+    /* width: 600px; */
   }
 
   .food-costarica {
@@ -167,19 +167,25 @@
     grid-row-gap: 15px;
     grid-column-gap: 15px;
     width: 98%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "placephoto1 place1" "placephoto5 place5"
+      "placephoto2 place2" "placephoto6 place6"
+      "placephoto3 place3" "placephoto7 place7"
+      "placephoto4 place4" "placephoto8 place8";
   }
 
   .food-morocco {
     display: grid;
     grid-template-areas:
-      "foodphoto1 foodphoto2"
-      "food1 food2"
-      "foodphoto3 foodphoto4"
-      "food3 food4"
-      "foodphoto5 foodphoto6"
-      "food5 food6"
-      "foodphoto7 foodphoto8 "
-      "food7 food8";
+      "foodphoto1" "foodphoto2"
+      "food1" "food2"
+      "foodphoto3" "foodphoto4"
+      "food3" "food4"
+      "foodphoto5" "foodphoto6"
+      "food5" "food6"
+      "foodphoto7" "foodphoto8 "
+      "food7" "food8";
     grid-row-gap: 30px;
     width: 600px;
     margin-left: 3%;
