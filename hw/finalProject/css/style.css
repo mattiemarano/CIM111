@@ -888,7 +888,7 @@ p {
 }
 
 .photo5 {
-  grid-ara: photo5;
+  grid-area: photo5;
   margin-top: auto;
   margin-left: auto;
   margin-right: auto;
