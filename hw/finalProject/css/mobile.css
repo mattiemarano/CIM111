@@ -53,7 +53,7 @@
   }
 
   .home-photos {
-    width: 300px;
+    width: 500px;
     margin-left: 2%;
     margin-right: 2%;
   }
@@ -85,7 +85,7 @@
   }
 
   .spain-places {
-    width: 200px;
+    width: 300px;
   }
 
   .places-photos {
@@ -141,9 +141,9 @@
     display: grid;
     grid-template-areas:
       "placephoto1 place1"
-      "placephoto2 place2"
+      "place2 placephoto2 "
       "placephoto3 place3"
-      "placephoto4 place4"
+      "place4 placephoto4 "
       "placephoto5 place5";
     grid-row-gap: 15px;
     width: 600px;
@@ -174,24 +174,28 @@
     width: 98%;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      "placephoto1 place1" "placephoto5 place5"
-      "placephoto2 place2" "placephoto6 place6"
-      "placephoto3 place3" "placephoto7 place7"
-      "placephoto4 place4" "placephoto8 place8";
+      "placephoto1 place1"
+      "placephoto2 place2"
+      "placephoto3 place3"
+      "placephoto4 place4"
+      "placephoto5 place5"
+      "placephoto6 place6"
+      "placephoto7 place7"
+      "placephoto8 place8";
   }
 
   .food-morocco {
     display: grid;
     grid-template-areas:
-      "foodphoto1" "foodphoto2"
-      "food1" "food2"
-      "foodphoto3" "foodphoto4"
-      "food3" "food4"
-      "foodphoto5" "foodphoto6"
-      "food5" "food6"
-      "foodphoto7" "foodphoto8 "
-      "food7" "food8";
-    grid-row-gap: 30px;
+      "foodphoto1 food1"
+      "food2 foodphoto2"
+      "foodphoto3 food3"
+      "food4 foodphoto4"
+      "foodphoto5 food5"
+      "food6 foodphoto6"
+      "foodphoto7 food7"
+      "food8 foodphoto8";
+    grid-row-gap: 40px;
     width: 600px;
     margin-left: 3%;
     margin-right: 3%;
@@ -219,15 +223,40 @@
   .food-italy {
     display: grid;
     grid-template-areas:
-      "foodphoto1 foodphoto2 foodphoto3"
-      "food1 food2 food3"
-      "foodphoto4 foodphoto5 foodphoto6"
-      "food4 food5 food6"
-      "foodphoto7 foodphoto8 foodphoto9"
-      "food7 food8 food9"
-      "foodphoto10 foodphoto11 foodphoto12"
-      "food10 food11 food12";
+      "foodphoto1 foodphoto2"
+      "food1 food2"
+      "foodphoto3 foodphoto4"
+      "food3 food4"
+      "foodphoto5 foodphoto6"
+      "food5 food6"
+      "foodphoto7 foodphoto8"
+      "food7 food8"
+      "foodphoto9 foodphoto10"
+      "food9 food10"
+      "foodphoto11 foodphoto12"
+      "food11 food12";
     grid-row-gap: 50px;
+  }
+
+  .places-visited-italy {
+    display: grid;
+    grid-template-areas:
+      "placephoto1 place1"
+      "place2 placephoto2"
+      "placephoto3 place3"
+      "place4 placephoto4"
+      "placephoto5 place5"
+      "place6 placephoto6"
+      "placephoto7 place7"
+      "place8 placephoto8"
+      "placephoto9 place9"
+      "place10 placephoto10"
+      "placephoto11 place11"
+      "place12 placephoto12"
+      "placephoto13 place13"
+      "place14 placephoto14";
+    grid-row-gap: 15px;
+    padding-bottom: 20px;
   }
 
   .moments-spain {
@@ -247,5 +276,32 @@
       "photo6";
     grid-row-gap: 30px;
     width: 600px;
+  }
+
+  .food-spain {
+    display: grid;
+    grid-template-areas:
+      "foodphoto1 foodphoto2"
+      "food1 food2"
+      "foodphoto3 foodphoto4"
+      "food3 food4"
+      "foodphoto5 foodphoto6"
+      "food5 food6"
+      "foodphoto7 foodphoto8"
+      "food7 food8"
+      "foodphoto9 ."
+      "food9 .";
+    grid-row-gap: 50px;
+  }
+
+  .places-visited-spain {
+    display: grid;
+    grid-template-areas:
+      "placephoto1 place1"
+      "place2 placephoto2"
+      "placephoto3 place3";
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    padding-bottom: 20px;
   }
 }
